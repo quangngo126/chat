@@ -1,11 +1,10 @@
 spring:
   data:
     mongodb:
-      username: alibou
-      password: alibou
-      host: localhost
-      port: 27017
       database: chat_app
-      authentication-database: admin
+      uri: mongodb+srv://nmq126:9cl2JhJ6KXhhrH99@cluster0.umjmd.mongodb.net/
 server:
   port: 8088
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
